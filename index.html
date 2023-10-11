@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4594ef123c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#platforms">Coursework</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi, I am <span>Aroop</span><br>Ghosh Pre-final year student!</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------ABOUT----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Current student looking to join the workforce to gain real-world experience. Ability to complete tasks on time in both individual and team settings. Dependable and reliable, ready to learn and grow with your company.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C</span></li>
+                            <li><span>C++</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>HTML5</span></li>
+                            <li><span>CSS3</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>NodeJS</span></li>
+                            <li><span>MongoDB</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2022</span><br>Front-end Designer (CSI-JSSSTU Student chapter)</li>
+                            <li><span>2022-present</span><br>Publicity CO-Lead</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.E. in Information Science and Engineering<br>from JSS Science and Technology University, Mysuru</li>
+                            <li><span>2019-2020</span><br>12th from Kendriya Vidyalaya (CBSE)</li>
+                            <li><span>2017-2018</span><br>10th from Kendriya Vidyalaya (CBSE)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------PLATFORMS-------->
+    <div id="platforms">
+        <div class="container">
+            <h1 class="sub-title">Relevant Technical Coursework</h1>
+            <div class="platforms-list">
+                <div>
+                    <h2>Object Oriented Programming, Data Structures and Algorithm, Linear Algebrs,<br>DBMS, Operating System, Web Designing<br>Computer Networks, Design and Analysis of Algorithm<br>Compiler Design</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------PORTFOLIO--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/myBlog1.png">
+                    <div class="layer">
+                        <h3>My Blog App</h3>
+                        <p><br>Functioning Blogs Webpage where user can share their experience on a daily basis.<br>Tech Stack: React, NodeJS, Express, Mongoose, MongoDB</p>
+                        <a href="https://github.com/aroop9"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portWeb1.png">
+                    <div class="layer">
+                        <h3>My Portfolio Webpage</h3>
+                        <p><br>This is my personal portfolio<br>Tech Stack: HTML, CSS, JavaScript</p>
+                        <a href="https://github.com/aroop9"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/textUtils1.png">
+                    <div class="layer">
+                        <h3>TextUtils</h3>
+                        <p><br>Here you can edit and rectify your text.<br>Tech Stack: HTML, CSS, Django</p>
+                        <a href="https://github.com/aroop9"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-------------CONTACT--------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> aroopghosh553@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91-7786908655</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/aroop9"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/AroopGhosh9?t=Pw_lWvTPbXsTAM6EB7t6zg&s=08"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/aroop_9/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aroop-ghosh-86a90119a/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message..."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Aroop 2022</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzOuZJvyDtMJGhVwfhH6XD6d0IMjeZuSHsyvZqTUe1W8Pr4ZVBDSao7DYkYhWCW0B_HWA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
